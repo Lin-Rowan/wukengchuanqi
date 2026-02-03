@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无坑传奇 | 20严选总站</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#a11d21",
+                        gold: "#c2a370",
+                        dark: "#000000",
+                        "card-bg": "rgba(10, 10, 10, 0.95)",
+                    },
+                    fontFamily: {
+                        display: ["Ma Shan Zheng", "cursive"],
+                        serif: ["Noto Serif SC", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-black text-[#cccccc] font-serif overflow-x-hidden;
+            }
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 30%, transparent 70%, #000 100%);
+        }
+        .glass-banner {
+            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.85) 15%, rgba(0,0,0,0.85) 85%, transparent);
+        }
+        .red-seal {
+            writing-mode: vertical-rl;
+            @apply bg-primary text-white py-1.5 px-0.5 rounded-sm shadow-lg shadow-primary/30;
+        }
+        .content-border {
+            border: 1px solid rgba(161, 29, 33, 0.25);
+        }
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: #000;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #333;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+            background: #a11d21;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+<body class="custom-scroll">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
