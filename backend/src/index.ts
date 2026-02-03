@@ -24,6 +24,11 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// 根路由
+app.get('/', (req, res) => {
+    res.json({ status: 'ok', message: '无坑传奇 API 服务', version: '1.0.0' });
+});
+
 // 详细请求日志
 app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);

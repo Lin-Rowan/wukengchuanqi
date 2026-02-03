@@ -2,7 +2,7 @@
  * API服务层 - 统一处理前端与后端的通信
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://wukengchuanqi-api.onrender.com/api';
 
 /**
  * 通用请求函数
